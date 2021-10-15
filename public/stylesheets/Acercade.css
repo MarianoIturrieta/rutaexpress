@@ -1,0 +1,155 @@
+/* inicio acerca de----------------------------------------------------------------------------------------------- */
+
+.img1-acerca{
+    background-image: url(../../img/egresados/acerca0.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 70vh;
+}
+
+.acerca-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.acerca-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:1 ;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: solid;
+    border-width: 10px;
+    border-color: #851835;
+}
+.acerca-2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start:1 ;
+    height: 60vh;
+    background-image: url(../../img/egresados/acerca1.jpg);
+    background-size: cover;
+    background-position:bottom ;
+}
+
+.acerca-3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2 ;
+    height: 60vh;
+    background-image: url(../../img/egresados/acerca2.jpg);
+    background-size: cover;
+    background-position:bottom ;
+}
+
+.acerca-4{
+    grid-column-start: 4/5;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: solid;
+    border-width: 10px;
+    border-color: #851835;
+}
+
+.acerca-5{
+    grid-column-start: 5/6;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: solid;
+    border-width: 10px;
+    border-color: #851835;
+}
+.acerca-6{
+    height: 60vh;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3 ;
+    background-image: url(../../img/egresados/acerca3.jpg);
+    background-size: cover;
+    
+}
+
+@media (max-width: 992px){
+
+.h2-acerca{
+    font-size: 200%;
+}
+
+.p-acerca{
+    font-size: 90%;
+}
+
+}
+
+@media (max-width: 768px){
+
+
+    .acerca-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h2-acerca{
+        font-size: 160%;
+        background-color: white;
+        padding: 0%;
+        width: 100%;  
+    }
+    
+    .p-acerca{
+        font-size: 80%;
+        background-color: white;
+        padding: 0%;
+        width: 100%;  
+    }
+    
+    .acerca-1, .acerca-4, .acerca-5{
+        border-width: 5px;
+    }
+
+    .acerca-1{
+        background-image: url(../../img/egresados/acerca1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .acerca-4{
+        background-image: url(../../img/egresados/acerca2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .acerca-5{
+        background-image: url(../../img/egresados/acerca3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .acerca-2{
+        display: none;
+    }
+    .acerca-3{
+        display: none;
+    }
+    .acerca-6{
+        display: none;
+    }
+    }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+  </head>
+  <body>
+
+<h1>{{title}}</h1>
+
+{{#if usuario}}
+
+<h1>Hola {{personal}}</h1>
+<p>¿Cómo puedo ayudarlo?</p>
+
+<p><a href="/salir">Volver</a></p>
+{{/if}}
+
+{{#unless usuario}}
+<form action='/ingresar' method="post"> 
+  <select> 
+    <option value="docente">Docente</option> 
+    <option value="alumno">Alumno</option> 
+    <option value="padre">Padre</option> 
+  </select>
+  <input type="submit" value="ingresar"></input>
+</form>
+{{/unless}}
+
+  </body>
+</html>
+
+
+
+
+
+
+
+

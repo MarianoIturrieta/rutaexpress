@@ -1,0 +1,156 @@
+    /* inicia inscripciones -------------------------------------------------------------------------------------------------------------------*/
+
+    .cont-form{
+        display: grid;
+        grid-template-columns: 1fr 40% 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    h3{
+        margin-top: 15%;
+        padding-top: 4%;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #851835;
+    }
+
+    .p-form{
+        text-align: center;
+    }
+
+    .img1{
+        grid-column: 1/2;
+        width: 100%;
+        height: 750px;
+        background-image: url(../../img/egresados/inscripcion1.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position-x:center ;
+    }
+
+    .img2{
+        margin-right: 3%;
+        grid-column: 3/3;
+        width: 100%;
+        height: 750px;
+        background-image: url(../../img/egresados/inscripcion2.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position-x:center ;
+
+    }
+
+    .formulario{
+        padding: 0;
+        border: solid;
+        border-color: #851835;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .level-li{
+        list-style: none;
+        text-align: end;
+        padding-top: 14%;
+    }
+
+    .input-li{
+        transform: translateX(-8%);
+        list-style: none;
+        padding: 0;
+        padding-top: 13%;
+    }
+
+    .boton-cont{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .boton-form{
+        padding: 1% 10% 1% 10% ;
+        background-color: #851835;
+        color: white;
+        border-style: none;
+    }
+
+    .boton-form:hover{
+        text-decoration: underline;
+    }
+
+    @media (max-width: 1500px){
+        h3{
+            padding-top: 25%;
+        }
+    }
+
+    @media (max-width: 992px){
+        .input-li{
+            padding-top: 23%;
+        }
+
+        input{
+            width: 80%;
+        }
+
+        .img2{
+            background-position: center;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .logo{
+            width: 100%;
+        }
+
+        .level-li{
+            font-size: small;
+            padding-top: 23%;
+        }
+
+        .input-li{
+            padding-top: 30%;
+        }
+    }
+
+    @media (max-width: 576px){
+        .cont-form{
+            display: block;
+        }
+
+        .formulario{
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        .boton-form{
+            margin-right: 3%;
+            margin-bottom: 3%;
+        }
+
+        .img1{
+            display: none;
+        }
+
+        .img2{
+            display: none;
+        }
+
+        h3{
+            padding-top: 5%;
+        }
+
+
+        .level-li{
+            font-size: small;
+            padding-top: 28%;
+        }
+
+        .input-li{
+            padding-top: 25%;
+        }
+    }
+
+    /* fin de inscripción------------------------------------------------------------------------------ */

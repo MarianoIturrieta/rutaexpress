@@ -1,0 +1,47 @@
+/* -----------incia novedades------------------------------------------------------------------------ */
+h3{
+    padding-top: 0px;
+}
+
+h5{
+    padding-left: 3%; 
+    padding-right: 3%;
+}
+
+h6{
+    text-align: right;
+    padding-right: 3%;
+}
+
+p{
+    padding-left: 3%;
+    padding-right: 3%; 
+    text-align: justify;
+}
+
+.noved-cont{
+    display: flex;
+}
+
+.noved-info{
+    width: 50%;
+}
+
+.noved-imagen{
+    background-image: url(../../img/egresados/inscripcion1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: auto;
+    
+}
+
+@media (max-width: 768px){
+    .noved-info{
+        width: 100%;
+       
+    }
+    .noved-imagen{
+        display: none;
+    }
+}
